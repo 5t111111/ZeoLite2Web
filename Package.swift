@@ -5,7 +5,7 @@ let package = Package(
     name: "MMDBWebAPI",
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git", from: "3.0.3"),
-	.package(url: "https://github.com/5t111111/MMDB-Swift.git", .branch("master"))
+        .package(url: "https://github.com/5t111111/MMDB-Swift.git", .branch("master"))
     ],
     targets: [
         .target(name: "App", dependencies: ["Vapor", "MMDB"]),
