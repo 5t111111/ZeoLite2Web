@@ -4,3 +4,5 @@ xcuserdata
 *.xcodeproj
 DerivedData/
 .DS_Store
+
+GeoLite2-Country.mmdb
