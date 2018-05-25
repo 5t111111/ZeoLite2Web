@@ -47,15 +47,6 @@
         }
       },
       {
-        "package": "MaxMind",
-        "repositoryURL": "https://github.com/5t111111/MaxMind.git",
-        "state": {
-          "branch": "master",
-          "revision": "553e7490fda88eb90df1ee45d7390a9fd16f3075",
-          "version": null
-        }
-      },
-      {
         "package": "Multipart",
         "repositoryURL": "https://github.com/vapor/multipart.git",
         "state": {
@@ -161,6 +152,15 @@
           "branch": null,
           "revision": "141cb4d3814dc8062cb0b2f43e72801b5dfcf272",
           "version": "1.0.1"
+        }
+      },
+      {
+        "package": "ZeoLite2",
+        "repositoryURL": "https://github.com/5t111111/ZeoLite2.git",
+        "state": {
+          "branch": "master",
+          "revision": "27834d2a6ed33e949a0e26586fa08ef6e09dfc3c",
+          "version": null
         }
       }
     ]
