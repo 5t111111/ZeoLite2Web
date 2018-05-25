@@ -1,13 +1,13 @@
 import Vapor
-import MaxMind
+import ZeoLite2
 
 final class LocationController {
-    var mmdb: MaxMind? {
+    var mmdb: ZeoLite2? {
         get {
             let directoryConfig = DirectoryConfig.detect()
             let mmdbPath = "\(directoryConfig.workDir)GeoLite2-Country.mmdb"
 
-            guard let db = MaxMind(mmdbPath) else {
+            guard let db = ZeoLite2(mmdbPath) else {
                 return nil
             }
 
