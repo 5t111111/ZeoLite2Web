@@ -6,3 +6,8 @@ DerivedData/
 .DS_Store
 
 GeoLite2-Country.mmdb
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
