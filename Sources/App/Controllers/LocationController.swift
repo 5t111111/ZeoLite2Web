@@ -28,15 +28,15 @@ final class LocationController {
             guard let country = db.lookup(ip) else {
                 return Location(
                     ip: ip,
-                    countryCode: nil,
-                    countryNames: nil
+                    country: Country(code: nil, names: nil),
+                    continent: Continent(code: nil, names: nil)
                 )
             }
 
             return Location(
                 ip: ip,
-                countryCode: country.isoCode,
-                countryNames: country.names
+                country: Country(code: country.isoCode, names: country.names),
+                continent: Continent(code: country.continent.code, names: country.continent.names)
             )
         }
     }
@@ -54,15 +54,15 @@ final class LocationController {
             guard let country = db.lookup(ip) else {
                 return Location(
                     ip: ip,
-                    countryCode: nil,
-                    countryNames: nil
+                    country: Country(code: nil, names: nil),
+                    continent: Continent(code: nil, names: nil)
                 )
             }
 
             return Location(
                 ip: ip,
-                countryCode: country.isoCode,
-                countryNames: country.names
+                country: Country(code: country.isoCode, names: country.names),
+                continent: Continent(code: country.continent.code, names: country.continent.names)
             )
         }
     }
