@@ -15,8 +15,8 @@ final class LocationController {
         }
     }
 
-    func show(_ req: Request) throws -> Future<Location> {
-        guard let ip = try? req.parameters.next(String.self) else {
+    func index(_ req: Request) throws -> Future<Location> {
+        guard let ip = req.http.remotePeer.hostname else {
             throw Abort(.unprocessableEntity)
         }
 
@@ -25,8 +25,8 @@ final class LocationController {
         }
     }
 
-    func getMyLocation(_ req: Request) throws -> Future<Location> {
-        guard let ip = req.http.remotePeer.hostname else {
+    func show(_ req: Request) throws -> Future<Location> {
+        guard let ip = try? req.parameters.next(String.self) else {
             throw Abort(.unprocessableEntity)
         }
 
