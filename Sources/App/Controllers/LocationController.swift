@@ -16,9 +16,11 @@ final class LocationController {
     }
 
     func index(_ req: Request) throws -> Future<Location> {
-        guard let ip = req.http.remotePeer.hostname else {
+        guard let ips = req.http.remotePeer.hostname else {
             throw Abort(.unprocessableEntity)
         }
+
+        let ip = ips.components(separatedBy: ",")[0]
 
         return Future.map(on: req) {
             return try self.getLocation(from: ip)
