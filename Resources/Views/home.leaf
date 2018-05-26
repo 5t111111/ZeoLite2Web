@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ZeoLite2 IP - Geolocation Lookup</title>
+</head>
+
+<body>
+<main>
+  <div style="text-align: center;">
+    <h1>ZeoLite2 IP - Geolocation Lookup</h1>
+    <p>
+      This product includes GeoLite2 data created by MaxMind, available from <a href="http://www.maxmind.com">http://www.maxmind.com</a>.
+    </p>
+  </div>
+</main>
+<footer style="text-align: center;">
+  <p>ZeoLite2 &copy; 2018</p>
+</footer>
+</body>
+</html>
