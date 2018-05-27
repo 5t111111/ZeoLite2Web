@@ -1,5 +1,6 @@
 import Vapor
 import ZeoLite2
+import GraphQL
 
 final class LocationController {
     var database: ZeoLite2? {
@@ -16,6 +17,13 @@ final class LocationController {
     }
 
     func index(_ req: Request) throws -> Future<Location> {
+        var query = "{ hello }"
+        var result = try graphql(schema: graphqlSchema, request: query)
+        print(result)
+        query = "{ boyhowdy }"
+        result = try graphql(schema: graphqlSchema, request: query)
+        print(result)
+
         guard let ips = req.http.remotePeer.hostname else {
             throw Abort(.unprocessableEntity)
         }
