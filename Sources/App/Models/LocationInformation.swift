@@ -1,6 +1,6 @@
 protocol LocationInformation {
     var code: String? { get }
-    var names: [String: String]? { get }
+    var names: [Name]? { get }
 }
 
 extension LocationInformation {
