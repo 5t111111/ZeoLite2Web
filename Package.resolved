@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "GraphQL",
+        "repositoryURL": "https://github.com/GraphQLSwift/GraphQL.git",
+        "state": {
+          "branch": null,
+          "revision": "faa869cdf0214cf25aa8df1081891b5e8647d6df",
+          "version": "0.5.0"
+        }
+      },
+      {
         "package": "HTTP",
         "repositoryURL": "https://github.com/vapor/http.git",
         "state": {
@@ -71,6 +80,15 @@
           "branch": null,
           "revision": "3219e328491b0853b8554c5a694add344d2c6cfb",
           "version": "3.0.1"
+        }
+      },
+      {
+        "package": "Runtime",
+        "repositoryURL": "https://github.com/wickwirew/Runtime.git",
+        "state": {
+          "branch": null,
+          "revision": "23357609f0df427d870bb4bd22ac14e0a4ea1346",
+          "version": "0.7.1"
         }
       },
       {
