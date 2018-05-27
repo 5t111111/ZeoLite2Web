@@ -167,9 +167,9 @@
         "package": "ZeoLite2",
         "repositoryURL": "https://github.com/5t111111/ZeoLite2.git",
         "state": {
-          "branch": "master",
-          "revision": "27834d2a6ed33e949a0e26586fa08ef6e09dfc3c",
-          "version": null
+          "branch": null,
+          "revision": "96efe410b8853891f2bb3cae96015400c88f64df",
+          "version": "1.0.0"
         }
       }
     ]
