@@ -52,8 +52,8 @@ final class LocationController {
 
         return Location(
             ip: ip,
-            country: Country(code: country.isoCode, names: country.names),
-            continent: Continent(code: country.continent.code, names: country.continent.names)
+            country: Country(code: country.isoCode, names: Name.createNames(from: country.names)),
+            continent: Continent(code: country.continent.code, names: Name.createNames(from: country.continent.names ?? [:]))
         )
     }
 }
